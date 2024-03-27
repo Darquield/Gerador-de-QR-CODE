@@ -1,0 +1,321 @@
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    margin: 20px auto;
+    transform: translate(-50%, -55%);
+    background: rgba(0,0,0,.9);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+  }
+  
+  .login-box p:first-child {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+    
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  
+  .login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #fff;
+    font-size: 12px;
+  }
+  
+  .login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 3px
+  }
+  
+  .login-box a:hover {
+    background: #fff;
+    color: #272727;
+    border-radius: 5px;
+  }
+  
+  .login-box a span {
+    position: absolute;
+    display: block;
+  }
+  
+  .login-box a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #fff);
+    animation: btn-anim1 1.5s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+  
+    50%,100% {
+      left: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #fff);
+    animation: btn-anim2 1.5s linear infinite;
+    animation-delay: .375s
+  }
+  
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+  
+    50%,100% {
+      top: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #fff);
+    animation: btn-anim3 1.5s linear infinite;
+    animation-delay: .75s
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+  
+    50%,100% {
+      right: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #fff);
+    animation: btn-anim4 1.5s linear infinite;
+    animation-delay: 1.125s
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+  
+    50%,100% {
+      bottom: 100%;
+    }
+  }
+  
+  .login-box p:last-child {
+    color: #aaa;
+    font-size: 14px;
+  }
+  
+  .login-box a.a2 {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .login-box a.a2:hover {
+    background: transparent;
+    color: #aaa;
+    border-radius: 5px;
+  }
+ 
+/* Estilo para o cabeçalho */
+header {
+    background-color: #333; /* Cor de fundo do cabeçalho */
+    color: #fff; /* Cor do texto */
+    padding: 10px 0; /* Espaçamento interno do cabeçalho */
+    display: flex;
+    justify-content: space-between; /* Alinha os elementos à esquerda e à direita */
+    align-items: center; /* Alinha verticalmente ao centro */
+}
+
+/* Estilo para o logo */
+#logo img {
+    max-width: 100px; /* Largura máxima da imagem do logo */
+}
+
+#logo h1 {
+    font-size: 21px; /* Tamanho da fonte do título */
+    margin-left: 10px; /* Espaço à esquerda do título */
+}
+
+/* Estilo para o menu de navegação */
+#menu ul {
+    list-style: none; /* Remove os marcadores de lista */
+    padding: 0; /* Remove o espaçamento interno */
+    display: flex; /* Alinha os itens horizontalmente */
+}
+
+#menu li {
+    margin-right: 20px; /* Espaço entre os itens do menu */
+}
+
+#menu a {
+    text-decoration: none; /* Remove a sublinhado nos links */
+    color: #fff; /* Cor do texto dos links */
+    font-weight: bold; /* Negrito nos links */
+}
+
+/* Estilize o link da página atual */
+#menu .current_page_item a {
+    background-color: #fff; /* Cor de fundo do link da página atual */
+    color: #333; /* Cor do texto do link da página atual */
+    padding: 5px 10px; /* Espaçamento interno do link da página atual */
+    border-radius: 5px; /* Borda arredondada */
+}
+body {
+    background-image: url("./image/F1.png"); /* Substitua pelo caminho da sua imagem de fundo */
+    background-size: cover; /* Isso faz com que a imagem de fundo cubra todo o corpo */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    background-attachment: fixed; /* Fixa a imagem de fundo para que ela não role com a página */
+    /* Outros estilos de fundo, como cor de fundo, podem ser adicionados aqui se necessário */
+}
+
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilo para o logo */
+#logo img {
+    max-width: 100px;
+}
+
+#logo h1 {
+    font-size: 21px;
+    margin-left: 10px;
+}
+
+/* Estilo para o menu de navegação */
+#menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+#menu li {
+    margin-right: 20px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Estilize o link da página atual */
+#menu .current_page_item a {
+    background-color: #fff;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Estilo para os contêineres das caixas */
+.box {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para os títulos das caixas */
+.box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para o rodapé */
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilo para limpar floats */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+

@@ -1,0 +1,6 @@
+Corrigir as chaves primárias. Devem ser inteiros e positivos adicionar dados das equipas, pilotos e grandes prémios.
+Sendo um site para entusiastas de F1 devem ter dados históricos. As páginas devem ser alimentadas com dados a partir da BD e não serem colocados dados diretamente.
+As foreign keys devem ser utilizadas. Para ir buscar a informação podem utilizar os INNER JOIN para juntar os dados de duas ou mais tabelas.
+Ao colocarem o ano civil, permite que possam fazer pesquisas mais abrangentes e mostrarem dados sobre equipas. grandes prémios e pilotos por exemplo.
+ALTER TABLE `pilotos` DROP PRIMARY KEY;
+ALTER TABLE `pilotos` ADD `id` INT NOT NULL AUTO_INCREMENT , ADD PRIMARY KEY (`id`); 

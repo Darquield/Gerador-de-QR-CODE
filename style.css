@@ -1,0 +1,337 @@
+:root {
+    --cor-primaria: #DC0000; /* Vermelho */
+    --cor-secundaria: #000000; /* Preto */
+    --cor-fundo: #ffffff; /* Branco */
+    --cor-destaque: #A9A9A9; /* Prata */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.circuito {
+    flex: 1 0 33%; 
+    max-width: calc(33% - 20px); 
+    margin: 10px;
+}
+
+/* Estilos gerais para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-secundaria);
+    
+}
+
+
+header {
+    background-color: var(--cor-primaria);
+    color: var(--cor-fundo);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos para o logotipo no cabeçalho */
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+    background-color: transparent;
+
+}
+
+#logo h1 {    
+    color: #fff;
+    outline-color: #fff;
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Estilos para o menu no cabeçalho */
+#menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para links */
+a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+}
+
+/* Estilos para links quando hover */
+a:hover {
+    color: var(--cor-destaque);
+}
+
+/* Estilos para seção principal */
+main {
+    padding: 20px;
+}
+
+/* Estilos para rodapé */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-fundo);
+    text-align: center;
+    padding: 10px;
+}
+/* Estilo para a linha horizontal */
+hr {
+    border: none; /* Remove a borda padrão da linha */
+    height: 5px; /* Altura da linha */
+    background-color: #6b6464; /* Cor de fundo da linha (pode ser personalizada) */
+    margin: 30px 0; /* Margens superior e inferior para espaçamento */
+}
+/* Estilos para o menu de navegação */
+nav {
+    display: flex;
+    justify-content: center; /* Centralizar horizontalmente */
+    align-items: center;
+    font-family: system-ui;
+    background: #DC0000;
+    height: 8vh;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin: 0 20px; /* Espaçamento entre os itens do menu */
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Estilo para destacar o item da página atual */
+.current_page_item a {
+    color: #ff5722;
+}
+
+/* Estilos para os botões do menu */
+nav ul li a {
+    display: inline-block; /* Torna os links elementos de bloco */
+    padding: 10px 20px; /* Espaçamento interno para criar aparência de botão */
+    text-decoration: none; /* Remove sublinhado padrão de links */
+    border: 1px solid #fff;
+    border-radius: 10px;
+    overflow: visible;
+    margin-right: 10px; /* Espaçamento entre os botões */
+}
+
+/* Estilos para os botões quando hover (passar o mouse por cima) */
+nav ul li a:hover {
+    background-color: #A9A9A9; /* Cor de fundo alterada no hover */
+}
+
+  /* Estilo para o título h2 */
+  h2 {
+    font-size: 34px; /* Altere o tamanho da fonte conforme desejado */
+}
+
+/* Estilo para os parágrafos p */
+p {
+    font-size: 20px; /* Altere o tamanho da fonte conforme desejado */
+}
+
+
+   /* Estilo para a grade de pilotos */
+        .pilotos-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; /* Espaçamento igual entre os pilotos */
+        }
+
+        /* Estilo para o quadrado de informações do piloto */
+        .piloto-info {
+            width: calc(100% - 50px); /* 50% da largura da tela com algum espaço entre os pilotos */
+            background-color: #DC0000;
+            color: #fff;
+            text-align: left;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 8 18px rgba(0, 0, 0, 0.3);
+            
+        }
+
+        /* Estilos para o nome do piloto */
+        .piloto-nome {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* Estilos para a equipe */
+        .piloto-equipe {
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        /* Estilos para o número do piloto */
+        .piloto-numero {
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        /* Estilos para a bandeira do país */
+        .piloto-bandeira {
+            width: 50px;
+            height: auto;
+            margin-top: 10px;
+        }
+          /* Estilo para a div que contém o texto */
+          .texto-direita {
+            float: right; /* Alinha à direita */
+            width: 70%; /* Define a largura desejada */
+            /* Adicione outros estilos de formatação aqui, se necessário */
+        }
+       /* Adicione este código ao seu arquivo style.css */
+
+       button {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: white;
+        background-color: #171717;
+        padding: 1em 2em;
+        border: none;
+        border-radius: .6rem;
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+      }
+      
+      button span:not(:nth-child(6)) {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 30px;
+        width: 30px;
+        background-color: #0c66ed;
+        border-radius: 50%;
+        transition: .6s ease;
+      }
+      
+      button span:nth-child(6) {
+        position: relative;
+      }
+      
+      button span:nth-child(1) {
+        transform: translate(-3.3em, -4em);
+      }
+      
+      button span:nth-child(2) {
+        transform: translate(-6em, 1.3em);
+      }
+      
+      button span:nth-child(3) {
+        transform: translate(-.2em, 1.8em);
+      }
+      
+      button span:nth-child(4) {
+        transform: translate(3.5em, 1.4em);
+      }
+      
+      button span:nth-child(5) {
+        transform: translate(3.5em, -3.8em);
+      }
+      
+      button:hover span:not(:nth-child(6)) {
+        transform: translate(-50%, -50%) scale(4);
+        transition: 1.5s ease;
+      }
+ 
+
+/* Reset de estilos padrão do navegador */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.logout {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+h5 {
+    font-size: 24px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+
+
+.noticia-container {
+    background-color: #fff;
+    margin: 12px;
+    border-radius: 10px;
+}
+
+.noticia-box {
+    margin-bottom: 20px;
+}
+
+.noticia-info h2 {
+    color: #333;
+}
+
+.noticia-info p {
+    color: #666;
+}
+
+.noticia-info img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+
+}
+.noticia-info img:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+/* Adicione estilos personalizados aqui */
+
+/* Redirecionar automaticamente para a página de login após 2 segundos */
+/* Você já adicionou o JavaScript para o redirecionamento */
+
+
+
+
+
+

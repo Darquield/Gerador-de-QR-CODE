@@ -1,0 +1,189 @@
+/* Estilos gerais para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para o título "Seu Perfil" */
+h1 {
+    font-size: 24px;
+    color: #fff;
+}
+
+/* Estilos para o contêiner do perfil */
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Estilos para a imagem de perfil */
+.profile-picture {
+    text-align: center;
+}
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #444;
+}
+
+/* Estilos para o botão "Alterar Foto" */
+.change-avatar {
+    background-color: #555;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.change-avatar:hover {
+    background-color: #444;
+}
+
+/* Estilos para os campos de entrada de texto */
+.form-group {
+    flex: 1;
+    margin: 0 10px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    background-color: #444;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* Estilos para o botão "Salvar" */
+button {
+    background-color: #DC0000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff5722;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.profile {
+    background-color: #fff;
+    max-width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+.profile h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.profile p {
+    font-size: 16px;
+    color: #666;
+}
+
+.profile a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.profile a:hover {
+    text-decoration: underline;
+}
+/* Estilize o botão de voltar */
+.voltar {
+    text-align: center;
+    margin: 20px;
+}
+
+.voltar a {
+    text-decoration: none;
+    background-color: #0074D9;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.voltar a:hover {
+    background-color: #0056b3;
+}
+
+/* Estilize o ícone de seta */
+.voltar a::before {
+    content: '\2190'; /* Código Unicode para uma seta para a esquerda */
+    margin-right: 5px;
+}
